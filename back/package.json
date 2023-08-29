@@ -1,0 +1,47 @@
+{
+  "name": "api-crud-node",
+  "version": "1.0.0",
+  "description": "Novo projeto",
+  "main": "index.js",
+  "engines": {
+    "node": "16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "typeorm": "ts-node-dev node_modules/.bin/typeorm",
+    "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migration/default",
+    "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
+    "build": "tsc --target ES5 --experimentalDecorators --emitDecoratorMetadata"
+  },
+  "author": "Vinicius Ramalho",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.2",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.11.2",
+    "nanoid": "^4.0.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.16"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/mongoose": "^5.11.97",
+    "@types/nanoid": "^3.0.0",
+    "@types/node": "^18.16.18",
+    "esm": "^3.2.25",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.3"
+  }
+}
