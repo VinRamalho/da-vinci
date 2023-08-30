@@ -11,9 +11,11 @@ export class GetController {
     try {
       const allRequests: Requests[] = await requestsRepository.find({
         relations: ["client", "user"],
+        order: { dt_creation: "DESC" },
       });
       res.status(200).json({
         requests: allRequests,
+        dtRefresh: new Date(),
       });
     } catch (error) {
       res.status(500).json({ message: "Erro Interno" });

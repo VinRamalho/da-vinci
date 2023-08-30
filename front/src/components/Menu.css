@@ -1,0 +1,32 @@
+.ant-menu-item {
+  background-color: #fdfdf5;
+  color: #6e6e6d;
+  border: none !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #b1bc93 !important;
+  color: #fbfbf3 !important;
+  border: none !important;
+}
+
+.ant-menu-item:hover {
+  background-color: #333;
+}
+
+.ant-menu-item:where {
+  background-color: #fdfdf5 !important;
+  color: #fbfcf4 !important;
+  border: none !important;
+}
+
+.ant-menu-light .ant-menu-item-selected:where {
+  background-color: #fdfdf5 !important;
+  color: #fbfcf4 !important;
+  border: none !important;
+}
+
+.ant-menu-light.ant-menu-root.ant-menu-inline {
+  border-inline-end: none !important;
+  border: none !important;
+}

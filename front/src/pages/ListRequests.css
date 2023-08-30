@@ -1,0 +1,49 @@
+.transparent-header-table thead th {
+  background-color: #f6f6ee !important;
+}
+
+.even-row {
+  background-color: #fbfbf9 !important; /* Cor para linhas pares */
+}
+
+.odd-row {
+  background-color: #f6f6ee !important; /* Cor para linhas ímpares */
+}
+
+.ant-pagination .ant-pagination-item-active {
+  background-color: #141414 !important;
+  border: none !important;
+  color: #f6f6ee !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #f6f6ee !important;
+}
+
+.ant-btn-primary {
+  background-color: #6e6e6d !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: #666666 !important;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1) !important;
+  border-color: #666666;
+}
+
+.input-search {
+  background-color: #fdfdf5 !important;
+  border: none !important;
+  width: 70%;
+  height: 45px;
+  caret-color: #333;
+  color: #333;
+}
+
+.input-search:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.input-search::placeholder {
+  color: #c0c0c0; /* Defina a cor desejada para o placeholder */
+}
